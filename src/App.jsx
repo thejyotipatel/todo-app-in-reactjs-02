@@ -30,7 +30,6 @@ function App() {
       return item
     })
     setItems(newTodoItems)
-    console.log(items)
   }
 
   //  delete item of todo
@@ -43,7 +42,7 @@ function App() {
     <>
       <div className='container'>
         <div className='title'>
-          <h1>To Do App</h1>
+          <h1>TODO App</h1>
         </div>
         <InputBox addTodoItem={addTodoItem} />
         <TodoList

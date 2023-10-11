@@ -47,6 +47,7 @@
   cursor: pointer;
   transition: var(--transition);
 }
+
 /* input box */
 .input-box-container {
   margin: 1.5em 0;
@@ -86,6 +87,7 @@
 .btn-add:hover {
   background-color: hsla(237, 100%, 70%, 0.85);
 }
+
 /* title */
 .title h1 {
   font-size: 2.5em;
@@ -134,3 +136,4 @@
 .btn-delete:hover {
   transform: scale(1.3);
 }
+ 
