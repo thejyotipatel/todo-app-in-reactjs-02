@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --clr-black: #242424;
+  --clr-white: white;
+  --clr-accent-light: #e5e7ff;
+  --clr-accent-main: #646cff;
+
+  --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --transition: 0.3s ease-in-out all;
+  --border-radius: 0.25rem;
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: var(--clr-black);
+  background-color: var(--clr-accent-light);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+#root {
+  width: calc(min(1280px, 95vw));
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.btn {
+  border-radius: var(--border-radius);
+  border: 1px solid transparent;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+/* title */
+.title h2 {
+  font-size: 2.5em;
+  color: var(--clr-black);
+}
+
+/* todo style */
+.todo-center {
+  width: calc(min(500px, 95vw));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+  margin: 1em 0;
+  padding: 0.8rem 2rem;
+  box-shadow: var(--shadow);
+  border-radius: var(--border-radius);
+  background-color: var(--clr-white);
+  font-size: 18px;
+  font-weight: 500;
+}
+.todo-title {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
+.btn-add {
+  background-color: var(--clr-accent-main);
+  color: var(--clr-accent-light);
+  padding: 0.5rem 0.8rem;
+  text-transform: capitalize;
+}
+.btn-delete {
+  background-color: transparent;
+  color: #d82626;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0;
+}
+.btn-delete:hover {
+  transform: scale(1.3);
+}
