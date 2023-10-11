@@ -29,26 +29,13 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-#root {
+.container {
   width: calc(min(1280px, 95vw));
   margin-inline: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  margin-top: 2em;
 }
 
 .btn {
@@ -60,9 +47,47 @@ h1 {
   cursor: pointer;
   transition: var(--transition);
 }
+/* input box */
+.input-box-container {
+  margin: 1.5em 0;
+  box-shadow: var(--shadow);
+  padding: 1em;
+  background-color: var(--clr-white);
+  width: 100%;
+  max-width: 650px;
+}
+.form {
+  width: 100%;
+  display: flex;
+}
+.input-control {
+  width: 100%;
+  border: 1px solid #646cff46;
+  background-color: var(--clr-accent-light);
+  padding: 0.5em;
+  border-radius: var(--border-radius) 0 0 var(--border-radius);
+  outline-color: var(--clr-accent-main);
+  outline-width: 2px;
+  font-size: 18px;
+}
+.input-control::placeholder {
+  color: #0a0d36b9;
+}
 
+.btn-add {
+  background-color: var(--clr-accent-main);
+  color: var(--clr-white);
+  padding: 0.5rem 0.8rem;
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  text-transform: capitalize;
+  width: 100%;
+  max-width: 100px;
+}
+.btn-add:hover {
+  background-color: hsla(237, 100%, 70%, 0.85);
+}
 /* title */
-.title h2 {
+.title h1 {
   font-size: 2.5em;
   color: var(--clr-black);
 }
@@ -73,8 +98,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* border: 2px solid red; */
-  margin: 1em 0;
+  margin: 0.6em 0;
   padding: 0.8rem 2rem;
   box-shadow: var(--shadow);
   border-radius: var(--border-radius);
@@ -87,11 +111,18 @@ h1 {
   gap: 0.5em;
   align-items: center;
 }
-.btn-add {
-  background-color: var(--clr-accent-main);
-  color: var(--clr-accent-light);
-  padding: 0.5rem 0.8rem;
-  text-transform: capitalize;
+
+.input-checkbox {
+  cursor: pointer;
+  font-size: 2em;
+  font-weight: 700;
+  width: 0.5em;
+  height: 0.5em;
+}
+.check-title {
+  text-decoration: line-through;
+  font-style: italic;
+  color: hsla(0, 0%, 0%, 0.65);
 }
 .btn-delete {
   background-color: transparent;
